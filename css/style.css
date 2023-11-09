@@ -1,0 +1,65 @@
+/* section{
+
+	column-count: 3;
+	column-gap: 5px;
+} */
+
+/* body{
+
+	background-color: ;
+} */
+
+.navbar{
+	margin: 10px;
+	
+}
+.galeria {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.galeria img {
+	cursor: pointer;
+	transition: transform 0.2s;
+	margin: 10px;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.galeria img:hover {
+	transform: scale(1.1);
+}
+
+.galeria img.clicked {
+	transform: scale(2);
+	/* Aumente o valor conforme necessário */
+}
+
+/* Estilos para o modal de imagem em tela cheia */
+.imagem-modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.9);
+	text-align: center;
+}
+
+.imagem-modal-conteudo {
+	display: inline-block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.fechar {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+}
