@@ -25,3 +25,22 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+// FORMULARIO
+
+const scriptURL =
+    "https://script.google.com/macros/s/AKfycbwW6u5gVw489i7N1fjFh7NrNxqjixyo6rx3j3LA_Klz1Nweqdkkw6nfBkVZEPCb5igv/exec";
+
+const form = document.forms["cadastro-form"];
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) =>
+            alert("Thank you! your form is submitted successfully.")
+        )
+        .then(() => {
+            window.location.reload();
+        })
+        .catch((error) => console.error("Error!", error.message));
+});
