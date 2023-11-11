@@ -63,3 +63,22 @@
 	color: #fff;
 	cursor: pointer;
 }
+
+.card {
+	display: ;
+	width: 300px;
+	/* Porcentagem para ser responsivo */
+
+	margin: 10px;
+	/* Centralizar o elemento na página */
+}
+
+@media (max-width: 400px) {
+
+	/* Ajuste para dispositivos com largura máxima de 600px */
+	.card {
+		width: 80%;
+		/* Reduz a largura para 80% em dispositivos menores */
+		font-display: 10px;
+	}
+}
