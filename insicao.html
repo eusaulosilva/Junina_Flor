@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="fonts/fontawesome/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="img/Ativo 3.png">
+    <title>Document</title>
+</head>
+
+
+<body>
+<div class="container">
+    <h1 class="mt-5">Cadastrar-se</h1>
+    <hr>
+    <form method="post"  name="cadastro-form">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <fieldset class="row">
+                    <legend>Dados Pessoais</legend>
+                    <div class="mb-3">
+                        <label for="txtNome" class="form-label">Nome</label>
+                        <input type="text" name="Nome" class="form-control" id="txtNome">
+                    </div>
+                    <div class="mb-3 col-md-6 col-xl-4">
+                        <label for="txtCPF" class="form-label">CPF</label>
+                        <input type="text" name="CPF" class="form-control" id="txtCPF">
+                    </div>
+                    <div class="mb-3 col-md-6 col-xl-4">
+                        <label for="txtDataNascimento">Data de Nascimento</label>
+                        <input type="date" name="Data_Nascimento" class="form-control" id="txtDataNascimento">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Contatos</legend>
+                    <div class="mb-3 ">
+                        <label for="txtEmail" class="form-label">Email</label>
+                        <input type="email" name="Email" class="form-control" id="txtEmail">
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <label for="txtTelefone" class="form-label">Telefone</label>
+                        <input type="tel" name="Telefone" class="form-control" id="txtTelefone" placeholder="61999999999">
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <fieldset class="row">
+                    <legend>Endereço</legend>
+                    <div class="mb-3 col-md-9 ">
+                        <label for="txtEND" class="form-label">Endereço</label>
+                        <div class="input-group">
+                            <input type="text" name="Endereço" class="form-control" id="txtEND">
+                        </div>
+                    </div>
+                    <div class="mb-3 col-md-3">
+                        <label for="txtNumero" class="form-label">Número</label>
+                        <input type="text" name="Número" class="form-control" id="txtNumero">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <textarea class="form-control text-muted bg-light" name="mensagem" rows="5" placeholder="mensagem"></textarea>
+                </fieldset>
+            </div>
+        </div>
+        <hr>
+        <div class="mb-3">
+            
+            <a href="index.html"><input type="submit" value="Criar meu cadastro" class="btn btn-danger" href="index.html"></a>
+            <a href="index.html"><input type="button" value="Voltar" class="btn btn-secondary" href="index.html"></a>
+        </div>
+    </form>
+</div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>
