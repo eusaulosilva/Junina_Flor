@@ -65,12 +65,12 @@
 }
 
 .card {
-	display: ;
+	
 	width: 300px;
 	/* Porcentagem para ser responsivo */
-
-	margin: 10px;
+	margin-top: 20px;
 	/* Centralizar o elemento na página */
+	text-align: center;
 }
 
 @media (max-width: 400px) {
